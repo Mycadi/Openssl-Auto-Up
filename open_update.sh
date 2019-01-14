@@ -49,7 +49,7 @@ cd $Adir
 tar -zxvf $Opensshv.tar.gz
 cd $Adir/$Opensshv
 #./configure --prefix=/usr --sysconfdir=/etc/ssh  --with-zlib=/usr/local/zlib --with-ssl-dir=/usr/local/openssl/include/openssl  --with-md5-passwords --disable-etc-default-login --with-ssl-engine --mandir=/usr/share/man && make -j$UJ && make install
-./configure --prefix=/usr --sysconfdir=/etc/ssh --with-md5-passwords --with-ssl-dir=/usr/local/openssl --without-hardening && make -j$UJ && make install
+./configure --prefix=/usr --sysconfdir=/etc/ssh --with-zlib=/usr/local/zlib --with-md5-passwords --with-ssl-dir=/usr/local/openssl --without-hardening && make -j$UJ && make install
 
 
 \mv /etc/init.d/sshd /etc/init.d/sshd.$TIMEDATA
