@@ -4,7 +4,7 @@
 # 自动化升级 openssh openssl
 # ZIP文件需要传到root目录中。
 # 运行脚本必须要root用户。
-# 运行规则 sh openssh_openssl_update.sh $1
+# 运行规则 sh open_update.sh 端口
 
 Opensslv=`ls /root/openssl_up/openssl-*.tar.gz | awk -F/ '{print $4}' |awk -F.tar '{print $1}'`
 Opensshv=`ls /root/openssl_up/openssh-*.tar.gz | awk -F/ '{print $4}' |awk -F.tar '{print $1}'`
